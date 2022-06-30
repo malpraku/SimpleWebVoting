@@ -1,0 +1,578 @@
+*{
+  margin: 0;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #081420;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Rowdies', cursive;
+}
+
+h2{
+  font-family: 'Rowdies', cursive;
+}
+
+header{
+  height: 15vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(8, 20, 32, 0.4);
+  -webkit-backdrop-filter: blur(30px);
+	backdrop-filter: blur(30px);
+  z-index: 3;
+}
+
+nav{
+  display: flex;
+  height: 15vh;
+  align-items: center;
+}
+
+.logo{
+  width: 50%;
+  margin-left: 6%;
+  cursor: pointer;
+}
+
+.logo img{
+  height: 3.125rem;
+}
+
+ul.navigation{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 6%;
+}
+
+ul.navigation li{
+  list-style: none;
+}
+
+ul.navigation li a{
+  padding: 0 1.25rem;
+  text-decoration: none;
+  color: #dedada;
+  font-family: 'Rowdies', cursive;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+ul.navigation li a:hover {
+  color: #FFF;
+}
+
+#register{
+  border: solid #fff 2px;
+  border-radius: 10px;
+  padding: 0.75rem 2.0625rem;
+  color: #fff;
+  margin-left: 1.25rem;
+}
+
+#register:hover{
+  background-color: #FFF; 
+  color: #000;
+}
+
+nav #hamburger{
+  display: none;
+}
+
+/* HERO SECTION */
+.hero{
+  height: 100vh;
+  width: 100%;
+}
+
+.hero .container{
+  display: flex;
+  position: absolute;
+  margin: 14.75rem 6% 0 15rem;
+}
+
+.logo-hero{
+  width: 25rem; 
+}
+
+.hero-text{
+  margin-top: 7.5rem;
+  margin-left: 6.563rem;
+}
+
+.hero p{
+  font-size: 1.5625rem;
+  margin-bottom: 3.125rem;
+}
+
+.hero a{
+  border-radius: 10px;
+  padding: 0.875rem 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  background: linear-gradient(to right,#e73a12, #f18505);
+}
+
+.hero a i{
+  margin-left: 1.125rem;
+}
+
+.pattern-top{
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -1.875rem;
+  width: 42%;
+}
+
+.pattern-hero-left{
+  position: absolute;
+  z-index: -1;
+  margin-top: 65vh;
+  width: 28%;
+}
+
+.pattern-hero-right{
+  position: absolute;
+  z-index: -2;
+  right: 0;
+  margin-top: 20vh;
+  width: 62%;
+}
+
+/* ABOUT */
+
+.about{
+  height: 100vh;
+  padding-bottom: 12.5rem;
+}
+
+.about .container{
+  width: 50%;
+  position: absolute;
+  margin: 14% 6% 0 36%;
+}
+
+.about h1{
+  font-size: 3.875rem;
+  margin-bottom: 3.75rem;
+}
+
+.about h2{
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.about p{
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin-bottom: 3.125rem;
+}
+
+.btn-wrap{
+  display: flex;
+  align-content: center;
+  width: fit-content;
+}
+
+.about a{
+  border-radius: 10px;
+  color: #fff;
+  padding: 0.875rem 1.25rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  background: linear-gradient(to right,#e73a12, #f18505);
+}
+
+.about a i{
+  margin-left: 1.125rem;
+}
+
+.pattern-about-top{
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  margin-top: 12%;
+  width: 12%;
+}
+
+/* COMPETITION */
+
+.competition{
+  height: fit-content;
+  position: relative;
+  padding-top: 1vh;
+  margin-bottom: 10vh;
+}
+
+.competition h2{
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+
+.competition-header{
+  text-align: center;
+  font-size: 2.875rem;
+  margin-top: 10.375rem;
+  margin-bottom: 1.625rem;
+}
+
+.competition-content{
+  display: flex;
+  text-align: center;
+}
+
+.card{
+  margin: auto;
+  display: flex;
+}
+
+.card-1{
+  background: #151F29;
+  padding: 1.25rem 2.5rem 1.875rem; 
+  margin: 1.25rem 0.625rem;
+  width: 17.5rem;
+  border-radius: 0.938;
+}
+
+.card-2{
+  background: #151F29;
+  padding: 1.25rem 2.5rem 1.875rem; 
+  margin: 1.25rem 0.625rem;
+  width: 17.5rem;
+  border-radius: 0.938;
+}
+
+.card-3{
+  background: #151F29;
+  padding: 1.25rem 2.5rem 1.875rem; 
+  margin: 1.25rem 0.625rem;
+  width: 17.5rem;
+  border-radius: 0.938;
+}
+
+.card-image{
+  height: 12.5rem;
+  width: 12.5rem;
+  margin: auto;
+}
+
+.image-1{
+  background: url(../assets/calon1.png);
+  background-size: cover;
+}
+
+.image-2{
+  background: url(../assets/calon2.png);
+  background-size: cover;
+}
+
+.image-3{
+  background: url(../assets/calon3.png);
+  background-size: cover;
+}
+
+.detail{
+  border-radius: 10px;
+  padding: 0.875rem 6.875rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.25rem;
+  background: linear-gradient(to right,#e73a12, #f18505);
+}
+
+.competition .pattern-competition-left{
+  position: absolute;
+  top: -22.5rem;
+  width: 30%;
+  z-index: -1;
+}
+
+.competition .pattern-competition-right{
+  position: absolute;
+  right: 0;
+  top: -12.5rem;
+  width: 26%;
+  z-index: -1;
+}
+
+/* EVENT */
+
+.event{
+  height: fit-content;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+
+.event-header{
+  text-align: center;
+  font-size: 2.875rem;
+  margin-bottom: 2.875rem;
+}
+
+.wrapper{
+  max-height: 31.25rem;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
+
+.wrapper .item{
+  background: url(../assets/grand.png);
+  background-size: cover;
+  min-width: 28.75rem;
+  height: 18.75rem;
+  text-align: center;
+  background-color: #ddd;
+  margin-right: 1.25rem;
+  border-radius: 1.25rem;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.btn-event-card{
+  position: absolute;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  width: 12.5rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-top: 3.125rem;
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
+  font-family: 'Rowdies', cursive;
+  font-weight: 300;
+  padding: 0.875rem 0.625rem 0;
+  background: linear-gradient(to right,#e73a12, #f18505);
+  text-decoration: none;
+  color: white;
+}
+
+/* TIMELINE */
+
+.timeline{
+  height: fit-content;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+  text-align: center;
+  position: relative;
+}
+
+.timeline-header{
+  font-size: 2.875rem;
+  margin-bottom: 4.125rem;
+}
+
+.timeline-content{
+  width: 30%;
+  text-align: start;
+  margin: 0 6% 0 42%;
+}
+
+.timeline-card{
+  margin-bottom: 1.125rem;
+  
+}
+
+.timeline-card-heading{
+  height: 2.5rem;
+  width: fit-content;
+  padding: 0.875rem 1.375rem 0;
+  border-radius: 10px;
+  font-size: 1.25rem;
+  font-family: 'Rowdies', cursive;
+  font-weight: 300;
+  background: linear-gradient(to right, #C83661, #C83C32 );
+}
+
+.timeline-card p{
+  margin-bottom: 0.75rem;
+}
+
+.pattern-timeline{
+  position: absolute;
+  top: 34vh;
+  left: 37%;
+  width: 2.625rem;
+  height: 42.5rem;
+}
+
+.pattern-timeline-left-big{
+  position: absolute;
+  top: 15vh;
+  left: 0;
+  width: 18%;
+}
+
+.pattern-timeline-left{
+  position: absolute;
+  left: 0;
+  bottom: 5.625rem;
+  width: 4%;
+}
+
+.pattern-timeline-right{
+  position: absolute;
+  top: 15vh;
+  right: 0;
+  width: 4%;
+}
+
+/* SPONSORSHIP */
+.partnership{
+  height: 76vh;
+  background-color: #151F29;
+}
+
+.partnership .container{
+  text-align: center;
+  padding: 8%;
+}
+
+.partnership-heading{
+  font-size: 2.875rem;
+  margin-bottom: 1rem;
+}
+
+.partnership .container p{
+  font-size: 1.25rem;
+  margin-bottom: 3.125rem;
+}
+
+.partnership-logo{
+  display: flex;
+  width: fit-content;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.partnership-logo-1{
+  background: url(../assets/agunacourse.svg);
+  background-size: cover;
+  height: 8.125rem;
+  width: 8.75rem;
+}
+
+.partnership-logo-2{
+  background: url(../assets/partnership-logo-2.png);
+  background-size: cover;
+  height: 8.125rem;
+  width: 8.125rem;
+  margin-right: 0.625rem;
+}
+
+.partnership-logo-3{
+  background: url(../assets/partnership-logo-3.png);
+  background-size: cover;
+  height: 4.375rem;
+  width: 8.125rem;
+  margin-right: 1.875rem;
+  align-self: center;
+}
+
+.partnership-logo-4{
+  background: url(../assets/partnership-logo-4.png);
+  background-size: cover;
+  height: 8.125rem;
+  width: 8.75rem;
+}
+
+.footer{
+  height: 18.75rem;
+  
+}
+
+.footer .container{
+  max-width: 71.25rem;
+  padding: 5%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-left{
+  max-width: 25%;
+  padding: 0 0.938px;
+}
+
+.footer-logo img{
+  width: 11.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.footer-middle{
+  max-width: 33.3%;
+  padding: 0 0.938rem;
+  margin-right: auto;
+  margin-left: 3%;
+}
+
+.footer-middle h2{
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+.footer-middle ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-middle li{
+  list-style: none;
+  margin: 0.625rem;
+}
+
+.footer-middle li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+.footer-right{
+  max-width: 33.3%;
+}
+
+.footer-right ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer-right h2{
+  margin-bottom: 1.25rem;
+  font-weight: 300;
+}
+
+.media{
+  display: none;
+}
+
+.copyright{
+  width: 100%;
+  background-color: #151F29;
+  text-align: center;
+  padding: 1.25rem 0;
+  bottom: 0;
+}
+
+
+
